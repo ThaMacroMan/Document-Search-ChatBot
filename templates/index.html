@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apple Themed Chatbot</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to our Chatbot</h1>
+    </header>
+    <main>
+        <div id="chatbot"></div>
+    </main>
+    <footer>
+        <p>© 2023 Your Company Name</p>
+    </footer>
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed@latest/dist/web.js"
+        Chatbot.init({
+            chatflowid: "5f1fb5b8-d042-42cf-ac8d-95472464d132",
+            apiHost: "https://frontend-production-2cfa.up.railway.app",
+        })
+    </script>
+</body>
+</html>
